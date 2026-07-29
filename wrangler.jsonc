@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "takufuda",
+  "main": "src/worker.tsx",
+  "compatibility_date": "2026-07-29",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "takufuda.yhay81.com",
+      "custom_domain": true,
+    },
+  ],
+  "observability": {
+    "enabled": true,
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "takufuda",
+      "database_id": "aa886a89-4d10-4293-8514-8f9e1b713eef",
+      "migrations_dir": "db/migrations",
+    },
+  ],
+  "triggers": {
+    "crons": ["29 19 * * *"],
+  },
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0d12"/>
+  <circle cx="1040" cy="40" r="360" fill="#12252d"/>
+  <circle cx="110" cy="620" r="300" fill="#261d12"/>
+  <rect x="120" y="80" width="960" height="470" rx="34" fill="#11151d" stroke="#303846" stroke-width="2"/>
+  <rect x="155" y="115" width="270" height="400" rx="22" fill="#171c25" stroke="#343d4b"/>
+  <rect x="155" y="115" width="270" height="5" rx="3" fill="#e9aa4a"/>
+  <circle cx="290" cy="240" r="74" fill="#1b1c1d" stroke="#e9aa4a" stroke-width="3"/>
+  <circle cx="290" cy="240" r="89" fill="none" stroke="#76572b" stroke-width="2" stroke-dasharray="48 14"/>
+  <text x="290" y="260" text-anchor="middle" fill="#fff4df" font-family="system-ui,sans-serif" font-size="58">卓</text>
+  <rect x="205" y="350" width="170" height="14" rx="7" fill="#eef1f5"/>
+  <rect x="230" y="382" width="120" height="8" rx="4" fill="#697586"/>
+  <g transform="translate(520 125)">
+    <polygon points="210,10 345,65 400,200 345,335 210,390 75,335 20,200 75,65" fill="none" stroke="#303846" stroke-width="2"/>
+    <polygon points="210,74 314,96 348,200 302,292 210,335 108,302 60,200 122,112" fill="#e9aa4a" fill-opacity=".18" stroke="#e9aa4a" stroke-width="4"/>
+    <g fill="#10151d" stroke="#f4c77d" stroke-width="3">
+      <circle cx="210" cy="74" r="7"/><circle cx="314" cy="96" r="7"/><circle cx="348" cy="200" r="7"/><circle cx="302" cy="292" r="7"/>
+      <circle cx="210" cy="335" r="7"/><circle cx="108" cy="302" r="7"/><circle cx="60" cy="200" r="7"/><circle cx="122" cy="112" r="7"/>
+    </g>
+  </g>
+  <text x="165" y="490" fill="#e9aa4a" font-family="system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="6">TAKUFUDA</text>
+</svg>
