@@ -10,6 +10,7 @@
 - ccfolia_users: ココフォリア用の駒をコピーした端末数
 - exporters: JSONを保存した端末数
 - returned_users: 24時間以上空けて再訪した端末数
+- import_actions / save_actions / share_actions / ccfolia_actions: 重複を含む操作回数
 - published_sheets: 現在D1にある共有札数
 
 `npm run metrics` で本番D1を読みます。QAは `?qa=1` または WebDriver を検知し、イベントAPIが永続化前に破棄します。

@@ -9,6 +9,10 @@ SELECT
   COUNT(DISTINCT CASE WHEN name = 'returned' THEN session_hash END) AS returned_users,
   COUNT(DISTINCT CASE WHEN name = 'visited' AND created_at >= unixepoch() - 604800 THEN session_hash END) AS users_7d,
   COUNT(DISTINCT CASE WHEN name = 'sheet_saved' AND created_at >= unixepoch() - 604800 THEN session_hash END) AS savers_7d,
+  COUNT(CASE WHEN name = 'sheet_imported' THEN 1 END) AS import_actions,
+  COUNT(CASE WHEN name = 'sheet_saved' THEN 1 END) AS save_actions,
+  COUNT(CASE WHEN name = 'share_copied' THEN 1 END) AS share_actions,
+  COUNT(CASE WHEN name = 'ccfolia_copied' THEN 1 END) AS ccfolia_actions,
   (SELECT COUNT(*) FROM sheets) AS published_sheets
 FROM product_events
 WHERE is_automated = 0;

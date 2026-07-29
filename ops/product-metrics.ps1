@@ -46,6 +46,10 @@ $Savers = [int]$Row.savers
         returned_users = [int]$Row.returned_users
         users_7d = [int]$Row.users_7d
         savers_7d = [int]$Row.savers_7d
+        import_actions = [int]$Row.import_actions
+        save_actions = [int]$Row.save_actions
+        share_actions = [int]$Row.share_actions
+        ccfolia_actions = [int]$Row.ccfolia_actions
         published_sheets = [int]$Row.published_sheets
     }
     rates = [ordered]@{

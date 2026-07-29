@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import client from "../public/app.js?raw";
+import metrics from "../ops/product-metrics.sql?raw";
 import pages from "../src/ui/pages.tsx?raw";
 
 describe("卓札 client", () => {
@@ -15,6 +16,8 @@ describe("卓札 client", () => {
     expect(client).toContain('new URLSearchParams(location.search).get("qa") === "1"');
     expect(client).toContain("navigator.webdriver === true");
     expect(client).toContain("JSON.stringify({ automated, name, sessionId, sheetId })");
+    expect(metrics).toContain("COUNT(CASE WHEN name = 'sheet_imported' THEN 1 END)");
+    expect(metrics).toContain("AS import_actions");
   });
 
   it("uses a compact application workspace and responsive visual surfaces", () => {
