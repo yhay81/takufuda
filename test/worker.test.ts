@@ -60,6 +60,7 @@ describe("卓札 worker", () => {
     const html = await response.text();
     expect(response.status).toBe(200);
     expect(response.headers.get("content-security-policy")).toContain("default-src 'self'");
+    expect(html).toContain('<h1 class="visually-hidden">探索者シートを作成・共有</h1>');
     expect(html).toContain('class="workspace-shell"');
     expect(html).toContain('data-radar="true"');
     expect(html).toContain("キャラクター保管所の公開URL");

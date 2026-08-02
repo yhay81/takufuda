@@ -14,6 +14,7 @@ const statLabels = [
 export function HomePage({ sheetId = "" }: { sheetId?: string }) {
   return (
     <Layout noindex={Boolean(sheetId)} sheetId={sheetId}>
+      <h1 class="visually-hidden">探索者シートを作成・共有</h1>
       <section class="import-strip" aria-label="既存シートの取り込み">
         <div class="import-state" aria-hidden="true">
           <span class="source-card">旧</span>
